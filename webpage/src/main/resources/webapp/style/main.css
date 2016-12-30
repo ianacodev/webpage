@@ -1,1 +1,301 @@
 /*webpage stylesheet*/
+
+/*Defaults*/
+body {
+ margin: 0 15%;
+ font-family: "Open Sans",helvetica,sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ margin: 0;
+}
+
+/*Header*/
+#pageHeader {
+ padding: 40px;
+ color: white;
+ background: linear-gradient(to right, black, red);
+ border-radius: 5px 5px 0px 0px;
+ position: relative;
+}
+
+#pageHeader > h2 {
+ margin: 0;
+ position: absolute;
+ left: 30px;
+ top: 50%;
+ transform: translate(0, -50%);
+ font-family: Lato;
+}
+
+#pageHeader > #logo {
+ width: 45px;
+ height: 45px;
+ position: absolute;
+ right: 30px;
+ top: 25%;
+ content: url(http://image.flaticon.com/icons/png/512/27/27130.png);
+ animation-name: rotate;
+ animation-duration: 3s;
+ animation-iteration-count: infinite;
+ animation-timining-function: ease-in-out;
+ animation-direction: alternate;
+}
+
+@keyframes rotate {
+ from{transform: rotate(0deg)}
+ to{transform: rotateY(360deg)};
+}
+
+/*Navbar*/
+#navbar {
+ height: 70px;
+}
+
+#navbar > nav > ul {
+ position: relative;
+}
+
+#navbar > nav > ul > li {
+ width: 25%;
+ float: left;
+ text-align: center;
+}
+
+#navbar > nav > ul > li > a {
+ padding: 20px 0;
+ width: 100%;
+ text-decoration: none;
+ color: black;
+ font-weight: bold;
+ border: 1px solid black;
+ display: inline-block;
+ box-sizing: border-box;
+}
+
+#navbar > nav > ul > li > a:hover {
+ box-shadow: 0 0 10px 1px black;
+}
+
+/*Dropdown*/
+#dropdown {
+ position: relative;
+}
+
+#dropdown:hover > #dropdownBtn {
+ box-shadow: 0 0 10px 1px black;
+}
+
+#dropdown > #dropdownMenu {
+ width: 100%;
+ text-align: left;
+ position: absolute;
+ background-color: rgba(0,0,0,0.8);
+ display: none;
+}
+
+#dropdown::after {
+ content: "";
+ border-style: solid;
+ border-width: 10px;
+ border-color: black transparent transparent transparent;
+ position: absolute;
+ top: 25px;
+ right: 20px;
+}
+
+#dropdown:hover > #dropdownMenu {
+ display: block;
+}
+
+#dropdown > #dropdownMenu > ul > li > a {
+  padding: 5px 10px;
+  width: 100%;
+  text-decoration: none;
+  display: block;
+  color: white;
+  box-sizing: border-box;
+}
+
+#dropdown > #dropdownMenu > ul > li > a:hover {
+ color:  white;
+ background-color: red;
+}
+
+/*Banner*/
+#banner {
+ min-width: 100%;
+ margin: 10px 0;
+ padding: 10px;
+ text-align: center;
+ box-sizing: border-box;
+}
+
+/*Posts*/
+#posts {
+ clear: both;
+ width: 75%;
+ float: left;
+ padding: 10px 0;
+ color: black;
+ background-color: white;
+ box-sizing: border-box;
+}
+
+#posts > .post {
+ padding: 10px;
+ margin-bottom: 10px;
+ border-bottom: 2px solid black;
+}
+
+.post > header {
+ margin-bottom: 10px;
+}
+
+.post > header > #titleNumber {
+ font-size: 45px;
+ line-height: 0;
+ padding-right: 3px;
+ display: inline-block;
+}
+
+.post > header > #title {
+ display: inline-block;
+}
+
+.post > .media {
+ position: relative;
+}
+
+.post > .media > iframe {
+    box-sizing: border-box;
+}
+
+.post > .media > aside {
+ text-align: center;
+ width: 40%;
+ top: 50%;
+ right: 0px;
+ position: absolute;
+ transform: translate(0, -50%);
+ box-sizing: border-box;
+ font-family: Lato;
+
+}
+
+blockquote {
+ font-size: 30px;
+ font-weight: bold;
+ transition: transform 1s;
+}
+
+blockquote::before {
+ content: '“';
+ font-size: 40px;
+ color: grey;
+}
+
+blockquote > a {
+ color: red;
+ text-decoration: none;
+ border-width: 1px 0 1px 0;
+ border-style: solid;
+ border-color: lightgrey;
+ text-shadow: 1px 0 darkred;
+}
+
+blockquote:hover {
+ transform: scale(1.1, 1.1);
+}
+
+/*Description*/
+#posts > .post > .description > p {
+ font-size: 16px;
+}
+
+#posts > .post > .description > details {
+ border-top: 1px solid lightgrey;
+}
+
+#posts > .post > .description > details > summary {
+ padding-top: 5px;
+ cursor: pointer;
+ outline: none;
+}
+
+#posts > .post > .description > details > .detailInfo {
+ text-align: left;
+}
+
+/*Ad Content*/
+#ads {
+ width: 25%;
+ float: right;
+}
+
+#ads img {
+ width: 100%;
+ height: 300px;
+ margin: 90px 0;
+ padding: 0 10px;
+ box-sizing: border-box;
+}
+
+/*General*/
+nav > ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+}
+
+summary::-webkit-details-marker { 
+ display:none; 
+}
+
+.xmargin {
+ margin-bottom: 10px;
+}
+
+/*Media Types*/
+.mediaVideo {
+ width: 60%;
+ height: 300px;
+}
+
+video {
+ object-fit: fill;
+}
+
+.mediaAudio {
+ width: 60%;
+ height: 80px;
+ position: relative;
+ display: inline-block;
+ border: 1px solid grey;
+ background-color: rgb(250, 250, 250);
+}
+
+.mediaAudio > img {
+ width: 80px;
+ height: 80px;
+} 
+
+audio {
+ width: 80%;
+ position: absolute;
+ top: 50%;
+ transform: translate(0, -50%);
+}
+
+.key {
+ font-weight: bold;
+}
+
+.value {
+ color: blue;
+}
+
+
+
+
+
