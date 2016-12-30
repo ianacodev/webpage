@@ -4,9 +4,323 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>webpage</title>
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="style/main.css"/>
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato"/>
     </head>
     <body>
-        <h1>Hello Webpage!</h1>
+        <header id="pageHeader">
+            <h2>TOP MUSIC</h2>
+            <div id="logo"></div>
+        </header>
+        <section class="xmargin" id="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#">Link1</a></li>
+                    <li><a href="#">Link2</a></li>
+                    <li><a href="#">Link3</a></li>
+                    <li id="dropdown">
+                        <a id="dropdownBtn" href="#">Link4</a>
+                        <nav id="dropdownMenu">
+                            <ul>
+                                <li><a href="#num10">#10 - the greatest</a></li>
+                                <li><a href="#num09">#9 - 24k</a></li>
+                                <li><a href="#num08">#8 - closer</a></li>
+                                <li><a href="#num07">#7 - cant't feel my face</a></li>
+                                <li><a href="#num06">#6 - stressed out</a></li>
+                                <li><a href="#num05">#5 - hymn for the weekend</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section id="banner">
+            <a href="https://www.youtube.com/channel/UCyRZskp9MwAVkoj6pZ_6J_w" target="_blank">
+                <img src="resources/images/bannerAd.jpg"/>
+            </a>
+        </section>
+        <section id="posts">
+            <article class="post" id="num10"> <!-- Number 10 -->
+                <header>
+                    <div id="titleNumber">10</div>
+                    <div id="title">
+                        <h3>The Greatest</h3>
+                        <h4>Sia Featuring Kendrick Lamar</h4>
+                    </div>
+                </header>
+                <section class="media">
+                    <iframe class="mediaVideo" src="https://www.youtube.com/embed/sG6aWhZnbfw"></iframe>
+                    <aside>
+                        <blockquote>
+                            <a target="_blank" href="https://play.google.com/music/preview/T3mewd47fqjqn6tftzz225w4wca?lyrics=1&utm_source=google&utm_medium=search&utm_campaign=lyrics&pcampaignid=kp-lyrics">
+                                <em>I'm free to be the greatest, I'm alive</em>
+                            </a>
+                        </blockquote>
+                    </aside>
+                </section>
+                <section class="description">
+                    <p>Catch Sia this fall on the Nostalgic For The Present Tour w/ Miguel & AlunaGeorge.</p>
+                    <details style="text-align: center">
+                        <summary>show more</summary>
+                        <div class="detailInfo">
+                            <div>
+                                <span class="key">artist: </span>
+                                <span class="value">sia</span>
+                            </div>
+                            <div>
+                                <span class="key">featured artist: </span>
+                                <span class="value">kendrick lamar</span>
+                            </div>
+                            <div>
+                                <span class="key">album: </span>
+                                <span class="value">the greatest (kda remix)</span>
+                            </div>
+                            <div>
+                                <span class="key">released: </span>
+                                <span class="value">2016</span>
+                            </div>
+                        </div>
+                    </details>
+                </section>
+            </article>
+            <article class="post" id="num09"> <!-- Number 9 -->
+                <header>
+                    <div id="titleNumber">9</div>
+                    <div id="title">
+                        <h3>24K Magic</h3>
+                        <h4>Bruno Mars</h4>
+                    </div>
+                </header>
+                <section class="media">
+                    <video class="mediaVideo" controls="controls" poster="resources/images/BrunoMars24KMagic.jpg">
+                        <source src="resources/videos/BrunoMars24KMagic.mp4" type="video/mp4"></source>
+                        <div>Browser does not support media type.</div>
+                    </video>
+                    <aside>
+                        <blockquote>
+                            <a target="_blank" href="https://play.google.com/music/preview/Tgwcxwvgufqtultollnrmultfqa?lyrics=1&utm_source=google&utm_medium=search&utm_campaign=lyrics&pcampaignid=kp-songlyrics">
+                                <em>Throw your hands up in the sky, Let's set this party off right</em>
+                            </a>
+                        </blockquote>
+                    </aside>
+                </section>
+                <section class="description">
+                    <p>See Bruno on the 24K Magic World Tour! Tickets on sale now.</p>
+                    <details style="text-align: center">
+                        <summary>show more</summary>
+                        <div class="detailInfo">
+                            <div>
+                                <span class="key">artist: </span>
+                                <span class="value">bruno mars</span>
+                            </div>
+                            <div>
+                                <span class="key">featured artist: </span>
+                                <span class="value">none</span>
+                            </div>
+                            <div>
+                                <span class="key">album: </span>
+                                <span class="value">24k magic</span>
+                            </div>
+                            <div>
+                                <span class="key">released: </span>
+                                <span class="value">2016</span>
+                            </div>
+                        </div>
+                    </details>
+                </section>
+            </article> 
+            <article class="post" id="num08"> <!-- Number 8 -->
+                <header>
+                    <div id="titleNumber">8</div>
+                    <div id="title">
+                        <h3>Closer</h3>
+                        <h4>The Chainsmokers ft. Halsey</h4>
+                    </div>
+                </header>
+                <section class="media">
+                    <div class="mediaAudio">
+                        <img src="resources/images/TheChainsmokersCloserftHalsey.jpg"/>
+                        <audio controls="controls">
+                            <source src="resources/audio/TheChainsmokersCloserftHalsey.mp3"></source>
+                            <div>Browser does not support media type.</div>
+                        </audio>
+                    </div>
+                    <aside>
+                        <blockquote>
+                            <a target="_blank" href="https://play.google.com/music/preview/Ttjbte6bxglwm77af2mktxkmnni?lyrics=1&utm_source=google&utm_medium=search&utm_campaign=lyrics&pcampaignid=kp-songlyrics">
+                                <em>Moved to the city in a broke down car</em>
+                            </a>
+                        </blockquote>
+                    </aside>
+                </section>
+                <section class="description">
+                    <p>See The Chainsmokers in their up coming world tour! Tickets on sale now.</p>
+                    <details style="text-align: center">
+                        <summary>show more</summary>
+                        <div class="detailInfo">
+                            <div>
+                                <span class="key">artist: </span>
+                                <span class="value">the chainsmokers</span>
+                            </div>
+                            <div>
+                                <span class="key">featured artist: </span>
+                                <span class="value">halsey</span>
+                            </div>
+                            <div>
+                                <span class="key">album: </span>
+                                <span class="value">collage</span>
+                            </div>
+                            <div>
+                                <span class="key">released: </span>
+                                <span class="value">2016</span>
+                            </div>
+                        </div>
+                    </details>
+                </section>
+            </article>        
+            <article class="post" id="num07"> <!-- Number 7 -->
+                <header>
+                    <div id="titleNumber">7</div>
+                    <div id="title">
+                        <h3>The Weekend</h3>
+                        <h4>Can't Feel My Face</h4>
+                    </div>
+                </header>
+                <section class="media">
+                    <iframe class="mediaVideo" src="https://www.youtube.com/embed/KEI4qSrkPAs"></iframe>
+                    <aside>
+                        <blockquote>
+                            <a target="_ blank" href="http://www.azlyrics.com/lyrics/weeknd/icantfeelmyface.html">
+                                <em>I can't feel my face when I'm with you</em>
+                            </a>
+                        </blockquote>
+                    </aside>
+                </section>
+                <section class="description">
+                    <p>Taken from the new album Beauty Behind The Madness.</p>
+                    <details style="text-align: center">
+                        <summary>show more</summary>
+                        <div class="detailInfo">
+                            <div>
+                                <span class="key">artist: </span>
+                                <span class="value">the weekend</span>
+                            </div>
+                            <div>
+                                <span class="key">featured artist: </span>
+                                <span class="value">none</span>
+                            </div>
+                            <div>
+                                <span class="key">album: </span>
+                                <span class="value">beauty behind the madness</span>
+                            </div>
+                            <div>
+                                <span class="key">released: </span>
+                                <span class="value">2015</span>
+                            </div>
+                        </div>
+                    </details>
+                </section>
+            </article>
+            <article class="post" id="num06"> <!-- Number 6 -->
+                <header>
+                    <div id="titleNumber">6</div>
+                    <div id="title">
+                        <h3>Twenty One Pilots</h3>
+                        <h4>Stressted Out</h4>
+                    </div>
+                </header>
+                <section class="media">
+                    <iframe class="mediaVideo" src="https://www.youtube.com/embed/pXRviuL6vMY"></iframe>
+                    <aside>
+                        <blockquote>
+                            <a target="_blank" href="https://play.google.com/music/preview/Tflgczyzw5lup64b4ksw7l4ccj4?lyrics=1&utm_source=google&utm_medium=search&utm_campaign=lyrics&pcampaignid=kp-songlyrics">
+                                <em>Wish we could turn back time, to the good old days.</em>
+                            </a>
+                        </blockquote>
+                    </aside>
+                </section>
+                <section class="description">
+                    <p>Twenty one pilots' music video for 'Stressed Out' from the new album, Blurryface.</p>
+                    <details style="text-align: center">
+                        <summary>show more</summary>
+                        <div class="detailInfo">
+                            <div>
+                                <span class="key">artist: </span>
+                                <span class="value">twenty one pilots</span>
+                            </div>
+                            <div>
+                                <span class="key">featured artist: </span>
+                                <span class="value">none</span>
+                            </div>
+                            <div>
+                                <span class="key">album: </span>
+                                <span class="value">blurryface</span>
+                            </div>
+                            <div>
+                                <span class="key">released: </span>
+                                <span class="value">2015</span>
+                            </div>
+                        </div>
+                    </details>
+                </section>
+            </article>
+            <article class="post" id="num05"> <!-- Number 5 -->
+                <header>
+                    <div id="titleNumber">5</div>
+                    <div id="title">
+                        <h3>Hymn For The Weekend</h3>
+                        <h4>Coldplay ft. Beyonce</h4>
+                    </div>
+                </header>
+                <section class="media">
+                    <div class="mediaAudio">
+                        <img src="resources/images/ColdplayHymnForTheWeekend.png"/>
+                        <audio controls="controls">
+                            <source src="resources/audio/ColdplayHymnForTheWeekend.mp3"></source>
+                            <div>Browser does not support media type.</div>
+                        </audio>
+                    </div>
+                    <aside>
+                        <blockquote>
+                            <a target="_blank" href="https://play.google.com/music/preview/Tdu7bjwtdw4lkyxbv3q67llgklm?lyrics=1&utm_source=google&utm_medium=search&utm_campaign=lyrics&pcampaignid=kp-songlyrics">
+                                <em>That we shoot across the sky</em>
+                            </a>
+                        </blockquote>
+                    </aside>
+                </section>
+                <section class="description">
+                    <p>The second single to be taken from Coldplay's acclaimed new album.</p>
+                    <details style="text-align: center">
+                        <summary>show more</summary>
+                        <div class="detailInfo">
+                            <div>
+                                <span class="key">artist: </span>
+                                <span class="value">coldplay</span>
+                            </div>
+                            <div>
+                                <span class="key">featured artist: </span>
+                                <span class="value">beyonce</span>
+                            </div>
+                            <div>
+                                <span class="key">album: </span>
+                                <span class="value">a head full of dreams</span>
+                            </div>
+                            <div>
+                                <span class="key">released: </span>
+                                <span class="value">2015</span>
+                            </div>
+                        </div>
+                    </details>
+                </section>
+            </article>       
+        </section>
+        <section id="ads">
+            <a target="_blank" href="http://www.apple.com/music/">
+                <img src="resources/images/ad1.jpg"/>
+            </a>
+            <a target="_blank" href="http://www.pandora.com/">
+                <img src="resources/images/ad2.jpg"/>
+            </a>
+        </section>
     </body>
 </html>
