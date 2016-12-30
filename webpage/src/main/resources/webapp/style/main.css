@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 #pageHeader {
  padding: 40px;
  color: white;
- background: linear-gradient(to right, black, lightgrey);
+ background: linear-gradient(to right, black, red);
  border-radius: 5px 5px 0px 0px;
  position: relative;
 }
